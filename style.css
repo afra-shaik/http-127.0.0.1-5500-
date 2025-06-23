@@ -1,0 +1,54 @@
+body {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.greeting {
+  font-size: 28px;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.heart {
+  font-size: 40px;
+  animation: beat 1s infinite;
+}
+
+.message {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
